@@ -1,0 +1,35 @@
+[type="text"] {
+	display: inline-block;
+	width: 400px;
+	height: 25px;
+	border: 1px dotted #ff0066;
+}
+
+input:focus {
+	color: #ff5722;
+	font-weight: bold;
+	text-align: center;
+}
+
+label:hover {
+	background-color: pink;
+}
+
+[type="radio"]:checked {
+	width: 50px;
+	height: 50px;
+}
+
+.box {
+	display: inline-block;
+	width: 20%;
+	text-align: right;
+	font-size: 10pt;
+}
+
+.box2 {
+	display: inline-block;
+	width: 152%;
+	text-align: right;
+	font-size: 10pt;
+}
