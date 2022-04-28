@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="../../resources/css/day01/page.css">
+</head>
+<body>
+<div style="text-align: center;">
+	<div style="display: inline-block; width: 800px;">
+		<h1 style="background-color: #ff0066; color: white; padding: 10px; text-align: center;">Black 회원가입</h1>
+			<form method="GET" style="padding: 20px; border: 1px solid gray; text-align: left;" name="frm" id="frm">
+				<div style="margin-bottom: 10px;">
+					<label for="name" class="box">회원이름 : </label>
+					<input type="text" name="name" id="name" class="box3">
+				</div>
+				<div style="margin-bottom: 10px;">
+					<label for="id" class="box">아이디 : </label>
+					<div style="display: inline-block; width: 67%; margin-left: 5px;">
+						<input type="text" name="id" id="id"
+								style="display: inline-block; width: 81%; padding: 5px; text-align: center;">
+						<button type="button" id="idcheck" 
+								style="display: inline-block; width: 15%; height: 30px; background-color: #2196F3; color: white; cursor: pointer;">id check</button>
+					</div>
+				</div>
+				<div style="margin-bottom: 10px;">
+					<label for="pw" class="box">비밀번호 : </label>
+					<input type="text" name="pw" id="pw" class="box3">
+				</div>
+				<div style="margin-bottom: 10px;">
+					<label for="pw check" class="box2">pw check : </label>
+					<input type="text" name="pwcheck" id="pwcheck" class="box3">
+				</div>
+				<div style="margin-bottom: 10px;">
+					<label for="mail" class="box2">회원메일 : </label>
+					<input type="text" name="mail" id="mail" class="box3">
+				</div>
+				<div style="margin-bottom: 10px;">
+					<label for="tel" class="box2">전화번호 : </label>
+					<input type="text" name="tel" id="tel" class="box3">
+				</div>
+				<div style="margin-bottom: 10px;">
+					<label for="gen" class="box2">회원성별 : </label>
+					<div class="box3" style="position: relative; top: 10px;">
+						<div style="float: left; width: 40%;; text-align: right;">
+							<span>남자</span><input type="radio" name="gen" id="mgen" value="M">
+						</div>
+						<div style="float: left; width: 20%; text-align: center;">
+							<p></p>
+						</div>
+						<div style="float: left; width: 40%; text-align: left;">
+							<span>여자</span><input type="radio" name="gen" id="fgen" value="F">
+						</div>
+					</div>
+				</div>
+				<div style="margin-bottom: 10px;">
+					<label for="avt"
+							class="box2" style="position: relative; top: -220px;">아바타 : </label>
+			<div style="display: inline-block; width: 65%; height: auto; text-align: center; padding-top: 15px;">
+				<div>
+					<div class="size">
+						<div style="height: 100px;">
+							<div class="size">
+							<img src="/black/image/avatar/img_avatar1.png" class="size4">
+							</div>
+						</div>
+						<div class="size3">
+							<input type="radio" name="avt" id="avt1" value="1">
+						</div>
+					</div>
+					<div class="size">
+						<div style="height: 100px;">
+							<div class="size">
+							<img src="/black/image/avatar/img_avatar2.png" class="size4">
+							</div>
+						</div>
+						<div class="size3">
+							<input type="radio" name="avt" id="avt2" value="2">
+						</div>
+					</div>
+					<div class="size2">
+						<div style="height: 100px;">
+							<div class="size">
+							<img src="/black/image/avatar/img_avatar3.png" class="size4">
+							</div>
+						</div>
+						<div class="size3">
+							<input type="radio" name="avt" id="avt3" value="3">
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="size2">
+						<div style="height: 100px;">
+							<div class="size">
+							<img src="/black/image/avatar/img_avatar4.png" class="size4">
+							</div>
+						</div>
+						<div class="size3">
+							<input type="radio" name="avt" id="avt4" value="4">
+						</div>
+					</div>
+					<div class="size2">
+						<div style="height: 100px;">
+							<div class="size">
+							<img src="/black/image/avatar/img_avatar5.png" class="size4">
+							</div>
+						</div>
+						<div class="size3">
+							<input type="radio" name="avt" id="avt5" value="5">
+						</div>
+					</div>
+					<div class="size2">
+						<div style="height: 100px;">
+							<div class="size">
+							<img src="/black/image/avatar/img_avatar6.png" class="size4">
+							</div>
+						</div>
+						<div class="size3">
+							<input type="radio" name="avt" id="avt6" value="6">
+						</div>
+					</div>
+				</div>
+	
+				</div>
+				</div>
+				<div style="text-align: center;">
+						<button style="float: left; background-color: #ff5722;"
+								type="button" id="rbtn" onclick="location.href='../index.html';" class="box4">reset</button>
+						<button style="float: left; background-color: #4CAF50;"
+								type="submit" id="hbtn" class="box4">home</button>
+						<input style="float: left; background-color: #2196F3;"
+								type="reset" id="jbtn" class="box4" value="join">
+				</div>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript" src="/black/resources/js/day04/join.js"></script>
+</body>
+</html>

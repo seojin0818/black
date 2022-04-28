@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Study</title>
+<link rel="stylesheet" type="text/css" href="/black/resources/css/w3.css">
+<link rel="stylesheet" type="text/css" href="/black/resources/css/base.css">
+<style type="text/css">
+</style>
+<script type="text/javascript" src="/black/resources/js/day04/joinProc.js"></script>
+</head>
+<body>
+	<h1 class="w3-center w3-pink" id="d1"></h1>
+<script type="text/javascript">
+	var param = location.search;
+	param = param.substring(1);
+	alert(param);
+	
+	var arr1 = param.split(&);
+	
+	var data = {};
+	var key = [];
+	
+	for(var i = 0 ; i < arr1.length ; i++){
+		var tmp = arr1[i].split('=');
+		
+		key[i] = tmp[0];
+		
+		data[tmp[0]] = tmp[1];
+	}
+	
+	for(var i = 0 ; i < arr1.length ; i++){
+		var tmp = document.getElementById('d1').innerHTML;
+		document.getElementById('d1').innerHTML = tmp + '<h1 class="w3-center">' + key[i] + ' : ' + data[key[i]] + '</h1>';
+	}
+	
+</script>
+</body>
+</html>
